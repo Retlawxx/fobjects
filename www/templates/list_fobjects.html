@@ -1,0 +1,16 @@
+<ion-view view-title="Objekte">
+    
+    <ion-nav-buttons side="right">
+        <a class="button ion-android-add" ui-sref="add_fobject"></a>
+    </ion-nav-buttons>  
+    
+	<ion-content>
+        <ion-list>
+          <ion-item ng-repeat="fobject in fobjects" href="#/add_fobject/{{fobject.id}}">
+            <h2>{{fobject.name}}</h2>
+            <p>{{fobject.location}}</p>
+          </ion-item>
+        </ion-list>
+	</ion-content>
+    
+</ion-view>
